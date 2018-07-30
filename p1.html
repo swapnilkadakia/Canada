@@ -1,0 +1,282 @@
+<html>
+<head>
+<title>canada</title>
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+<style>
+*{box-sizing: border-box}
+body { font-family: Verdana,sans-serif;margin:0}
+.mySlides{ display:none}
+img {vertical-align:middle;}
+
+.slideshow-container{
+max-width:1000px;
+position:relative;
+margin:auto;
+}
+.prev,.next{
+cursor;pointer;
+position:absolute;
+top:50%;
+width:auto;
+padding:16px;
+margin-top:-22px;
+color:white;
+font-weight:bold;
+font-size:18px;
+transition:0.6s;
+border-radius:0 3px 3px 0;
+}
+.next{
+right:0;
+border-radius:3px 0 0 3px;
+}
+.prev:hover,next:hover{ background-color: rgba(0,0,0,0.8);
+}
+.text{
+color: #f2f2f2;
+font-size: 15px;
+padding:absolute;
+bottom:8px;
+width:100%;
+text-align:center;
+}
+.numbertext{
+color:#f2f2f2;
+font-size:12px;
+padding:8px 12px;
+position:absolute;
+top:0;
+}
+.dot{
+cursor:pointer;
+height:15px;
+width:15px;
+margin:0 2px;
+background-color:#bbb;
+border-radius:50%;
+display:inline-block;
+transition:background-color 0.6s ease;
+}
+.active .dot:hover{
+background-color:#717171;
+}
+.fade{
+-webkit-animation-name: fade;
+-webkit-animation-duration:1.5s;
+}
+@-webkit-keyframes fade{
+from{opacity: .4}
+to{opacity: 1}
+}
+@keyframes fade{
+from{opacity: .4}
+to{opacity: .1}
+}
+</style>
+<style>
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+</head>
+
+
+
+<body bgcolor="black">
+
+<h1 style="font-size:60px;font-family:Impact;letter-spacing:20px"><span style="color:red;">C</span><span style="color:white;">A</span><span style="color:red;">N</span><span style="color:white;">A</span><span style="color:red;">D</span><span style="color:white;">A</span><span style="float:right;color:gray;font-size:30px"><sub>explore like never before</sub></span></h1>
+<div class="navbar">
+  <a href="p1.html">Home</a>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Cities
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="p2.html">Toronto</a>
+     
+      <a href="p5.html">Vancouver</a>
+	  
+    </div>
+  </div> 
+  
+    <div class="dropdown">
+    <button class="dropbtn">Canadian Rockies
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      
+      <a href="p3.html">Banff and Jasper</a>
+	  <a href="p6.html">Whistler</a>
+	  
+    </div>
+  </div> 
+  <a href="p7.html" target="blank">Feedback</a>
+  
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+<div class="numbertext">1/3</div>
+<img src="C:\Users\Swapnil Kadakia\Desktop\canada photos\IMG_20180714_105920_844.jpg" style="width:100% ;height:40%">
+<div class="text"><i>Jasper</i></div>
+</div>
+<div class="mySlides fade">
+<div class="numbertext">2/3</div>
+<img src="C:\Users\Swapnil Kadakia\Desktop\canada photos\IMG_20180623_224938_201.jpg" style="width:100%;height:40%">
+<div class="text"><i>Banff</i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="C:\Users\Swapnil Kadakia\Desktop\canada photos\IMG_20180624_165423_239.jpg"  style="width:100%;height:40%">
+  <div class="text"><i>Lake Moraine</i></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script><br>
+<br<
+<br>
+<center>
+<p style="color:white;font-family:Arial;line-height:60px;letter-spacing:2px;">
+<b>Where to go in Canada?</b><br>
+The expanse of Canada's natural beauty, from mountains and glaciers to secluded lakes and forests, is almost unparalleled worldwide. But Canada's allure is not just the great outdoors. Canada has cosmopolitan cities that are clean, safe, friendly, and multicultural. In fact, Canada repeatedly is lauded as one of the world's most livable countries. Whether your interests are river rafting or live theater, Canada won’t disappoint.
+
+</p>
+<iframe width="40%" height="345" src="https://www.youtube.com/embed/TknrmpS4GOg ">
+</iframe>
+<p><br><br><br>
+<p style="color:gray;font-size:12px;">
+2018<br>
+&copy;canada
+</p>
+</center>
+
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
